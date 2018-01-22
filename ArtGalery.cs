@@ -1,29 +1,32 @@
 using System;
 using System.Collections.Generic;
 
-class ArtGalery : IArtSelect
+namespace ArtGallery 
 {
-    private List<ArtPiece> m_Collection;
-
-    public List<ArtPiece> collection // public property
+    class ArtGalery : IArtSelect
     {
-        get { return m_Collection; } // access control
-        set { m_Collection = value; }
-    }
+        private List<ArtPiece> m_Collection;
 
-    public ArtGalery Initialize ()
-    {
-        this.m_Collection = new List<ArtPiece>();
-        return this;
-    }
+        public List<ArtPiece> collection // public property
+        {
+            get { return m_Collection; } // access control
+            set { m_Collection = value; }
+        }
 
-    public ArtPiece ProcessArtPiece()
-    {
-        return new ArtPiece();
-    }
+        public ArtGalery Initialize ()
+        {
+            this.m_Collection = new List<ArtPiece>();
+            return this;
+        }
 
-    public bool Select(ArtPiece piece) {
-        return this.collection.Contains(piece);
-    }
+        public ArtPiece ProcessArtPiece()
+        {
+            return new ArtPiece();
+        }
 
+        public bool Select(ArtPiece piece) {
+            return piece.price;
+        }
+
+    }
 }

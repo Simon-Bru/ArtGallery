@@ -1,4 +1,9 @@
-interface IArtSelect 
+using System;
+
+namespace ArtGallery
 {
-    bool Select(ArtPiece piece);
+    interface IArtSelect 
+    {
+        bool Select(ArtPiece piece);
+    }
 }

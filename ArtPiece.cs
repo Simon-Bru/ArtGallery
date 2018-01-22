@@ -4,7 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_1
+public enum Categories
+{
+    PAINTING, DRAWING , SCULPTURE 
+}
+
+namespace ArtGallery
 {
     class ArtPiece:IComparable
     {
