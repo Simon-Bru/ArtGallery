@@ -1,4 +1,4 @@
 interface IArtSelect 
 {
-    bool select(ArtPiece piece);
+    bool Select(ArtPiece piece);
 }
