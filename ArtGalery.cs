@@ -28,5 +28,12 @@ namespace ArtGallery
             return piece.price >= 150;
         }
 
+        public void Sort()
+        { 
+            this.m_Collection.Sort(delegate(ArtPiece x, ArtPiece y) 
+            {
+                    return x.CompareTo(y);
+            });
+        }
     }
 }
