@@ -664,28 +664,36 @@
     ]
   },
   "packageFolders": {
-    "/home/simon/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\cleme\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/home/simon/Documents/dev/csharp/ArtGallery/ArtGallery.csproj",
+      "projectUniqueName": "C:\\Users\\cleme\\Documents\\ECE\\ING4\\Sem2\\C#\\ArtGallery\\ArtGallery.csproj",
       "projectName": "ArtGallery",
-      "projectPath": "/home/simon/Documents/dev/csharp/ArtGallery/ArtGallery.csproj",
-      "packagesPath": "/home/simon/.nuget/packages/",
-      "outputPath": "/home/simon/Documents/dev/csharp/ArtGallery/obj/",
+      "projectPath": "C:\\Users\\cleme\\Documents\\ECE\\ING4\\Sem2\\C#\\ArtGallery\\ArtGallery.csproj",
+      "packagesPath": "C:\\Users\\cleme\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cleme\\Documents\\ECE\\ING4\\Sem2\\C#\\ArtGallery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/simon/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\cleme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
