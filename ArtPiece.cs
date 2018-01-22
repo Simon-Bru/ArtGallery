@@ -51,7 +51,7 @@ namespace ArtGallery
 
         public override string ToString()
         {
-            return "Title:\t"+m_title+"\nCategorie:\t"+m_categorie+"\nPrice:\t"+m_price;
+            return "Title:\t"+m_title+"\nCategorie:\t"+m_categorie+"\nPrice:\t"+m_price+"\n";
         }
     }
 }
