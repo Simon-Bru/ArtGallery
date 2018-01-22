@@ -13,27 +13,24 @@ namespace ArtGallery
 {
     class ArtPiece : IComparable<ArtPiece>
     {
-        private string m_title=null;
-        private Categories m_categorie;
-        private int m_price;
+        private readonly string m_title=null;
+        private readonly Categories m_categorie;
+        private readonly int m_price;
 
         public string title
         {
             get { return m_title; }
-            set { m_title = value; }
         }
 
         public Categories categorie
         {
             get { return m_categorie; }
-            set { m_categorie = value; }
         }
 
 
         public int price
         {
             get { return m_price; }
-            set { m_price = value; }
         }
 
         public ArtPiece(string title, Categories categorie,int price)

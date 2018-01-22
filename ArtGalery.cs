@@ -31,9 +31,9 @@ namespace ArtGallery
             this.collection.Add(new ArtPiece("Badly Shapen Pot", Categories.SCULPTURE, 25));
         }
 
-        public List<ArtPiece> ProcessArtPiece()
+        public List<ArtPiece> ProcessArtPiece(IArtSelect artSelect)
         {
-            return this.collection.FindAll(a => this.Select(a));
+            return this.collection.FindAll(a => artSelect.Select(a));
         }
 
         public bool Select(ArtPiece piece) {
