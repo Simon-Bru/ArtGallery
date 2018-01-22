@@ -25,7 +25,7 @@ namespace ArtGallery
         }
 
         public bool Select(ArtPiece piece) {
-            return piece.price;
+            return piece.price >= 150;
         }
 
     }
