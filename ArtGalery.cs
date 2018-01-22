@@ -19,9 +19,9 @@ namespace ArtGallery
             return this;
         }
 
-        public ArtPiece ProcessArtPiece()
+        public List<ArtPiece> ProcessArtPiece()
         {
-            return new ArtPiece();
+            return m_Collection.FindAll(a => this.Select(a));
         }
 
         public bool Select(ArtPiece piece) {
