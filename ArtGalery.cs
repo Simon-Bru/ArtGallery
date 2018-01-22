@@ -1,7 +1,13 @@
 using System;
 
-class ArtGalery
+class ArtGalery : IArtSelect
 {
+    public bool Select(ArtPiece piece) {
+        if(this.m_Collection.contains(piece)) {
+
+        }
+        return true;
+
     private List<ArtPiece> m_Collection; 
 
     public int data // public property
