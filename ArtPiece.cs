@@ -11,7 +11,7 @@ public enum Categories
 
 namespace ArtGallery
 {
-    class ArtPiece:IComparable
+    class ArtPiece : IComparable<ArtPiece>
     {
         private string m_title=null;
         private Categories m_categorie;
@@ -44,14 +44,14 @@ namespace ArtGallery
 
         }
 
-        public int CompareTo(object obj)
-        {
-            return price.CompareTo(obj);
+        public int CompareTo(ArtPiece artP)
+        {            
+            return this.price.CompareTo(artP.price);
         }
 
         public override string ToString()
         {
-            return "title:"+m_title+" categorie:"+m_categorie+" price:"+m_price;
+            return "Title:\t"+m_title+"\nCategorie:\t"+m_categorie+"\nPrice:\t"+m_price;
         }
     }
 }
