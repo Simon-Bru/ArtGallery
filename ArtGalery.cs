@@ -1,5 +1,5 @@
 using System;
 
-namespace ArtGallery
+class ArtGalery
 {
 }

@@ -1,5 +1,5 @@
 using System;
 
-namespace ArtPiece
+class ArtPiece
 {
 }
