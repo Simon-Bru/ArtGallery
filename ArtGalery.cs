@@ -1,28 +1,29 @@
 using System;
+using System.Collections.Generic;
 
 class ArtGalery : IArtSelect
 {
-    public bool Select(ArtPiece piece) {
-        if(this.m_Collection.contains(piece)) {
+    private List<ArtPiece> m_Collection;
 
-        }
-        return true;
-
-    private List<ArtPiece> m_Collection; 
-
-    public int data // public property
+    public List<ArtPiece> collection // public property
     {
-        get { return m_data; } // access control
-        set { m_data = value; }
+        get { return m_Collection; } // access control
+        set { m_Collection = value; }
     }
 
     public ArtGalery Initialize ()
     {
-        List<ArtPiece> m_Collection = new List<ArtPiece>();
+        this.m_Collection = new List<ArtPiece>();
+        return this;
     }
 
-    public Art ProcessArtPiece()
+    public ArtPiece ProcessArtPiece()
     {
-        
+        return new ArtPiece();
     }
+
+    public bool Select(ArtPiece piece) {
+        return this.collection.Contains(piece);
+    }
+
 }
